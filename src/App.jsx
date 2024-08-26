@@ -2,6 +2,7 @@ import './App.css'
 import LoginPage from './components/LoginPage'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import OneBox from './components/OneBox';
+import OneboxContent from './components/OneboxContent';
 
 const PrivateRoute = ({ element: Element }) => {
   const isLoggedIn = localStorage.getItem('googleToken');
@@ -14,8 +15,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/onebox" element={<PrivateRoute element={OneBox} />} />
-          </Routes>
+          <Route exact path="/onebox" element={<PrivateRoute element={OneBox} />} />
+          <Route exact path='/list' element={<PrivateRoute element={OneboxContent} />} />
+        </Routes>
       </Router>
     </div>
   )

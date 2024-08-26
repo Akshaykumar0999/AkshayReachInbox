@@ -1,0 +1,58 @@
+.list-details-main-container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 1px solid #737373;
+    padding: 10px;
+}
+.details-button-card {
+    height: 30px;
+    width: 100%;
+    background-color: #353533;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 2px 8px 2px 8px;
+    font-weight: 500;
+}
+.list-details-first-card {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.list-details-first-li-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    list-style-type: none;
+}
+.name-card {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: left;
+}
+.name-value-card {
+    font-size: 15px;
+    font-weight: 400;
+    color: #c4c2c2;
+    text-align: right;
+}
+.datails-second-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
